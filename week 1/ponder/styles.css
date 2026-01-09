@@ -1,0 +1,25 @@
+.content{
+    text-align: center;
+    border-color: #000;
+    /* margin:  */
+
+
+}
+
+h1 + p{
+color: blue;
+}
+
+hr{
+    color: blue;
+    margin: 0px, 50%;
+    align-content: center;
+}
+
+.list{
+    list-style: none;
+}
+
+.list li{
+    margin: none;
+}
