@@ -1,25 +1,49 @@
+body{
+    border: solid;
+    border-width: 2px;
+    height: 98vh;
+}
+
 .content{
     text-align: center;
-    border-color: #000;
-    /* margin:  */
-
+    width: 60%;
+    justify-self: center;
+    padding: 2px;
+    
 
 }
 
 h1 + p{
-color: blue;
+    color: blue;
+    font-size: large;
 }
 
 hr{
-    color: blue;
-    margin: 0px, 50%;
-    align-content: center;
+    background-color: blue;
+    border-color: blue;
+    width: 450px;
+    
+}
+
+#topics{
+    justify-self: center;
+    max-width: 310px;
 }
 
 .list{
     list-style: none;
+    width: 100%;
+}
+
+ul{
+    padding: 0;
 }
 
 .list li{
-    margin: none;
+    text-align: left;
+}
+
+img {
+    width: 310px;
+    height: auto;
 }
