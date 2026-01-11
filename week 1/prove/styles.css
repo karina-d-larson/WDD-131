@@ -2,13 +2,14 @@
     aspect-ratio: 1010/1003;
     border: solid 2px;
     margin: 10px;
-    justify-items: center;
     align-items: center;
 }
 
 .title_section{
     padding: 2% 15%;
+    width: 70%;
     border-color: gray;
+    justify-self: center;
 }
 
 .title_section h1{
@@ -26,7 +27,22 @@
 
 
 .content{
-    justify-content: center;
-    padding: 5% 15%;
+    padding: 2% 15%;
     line-height: 1.7rem;
+}
+
+.content h5{
+    font-weight: 500;
+    font-style: italic;
+}
+
+.content li{
+    padding-top: 2%;
+}
+
+img{
+    width: 15%;
+    display: flex;
+    justify-self: center;
+    padding-top: 2%;
 }
