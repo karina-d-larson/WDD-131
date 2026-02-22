@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Card Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<main>
+  <section class="errors" aria-live="polite"></section>
+
+  <form id="checkoutForm" novalidate>
+
+    <div class="card-wrapper">
+
+      <!-- CARD FRONT -->
+      <div class="card-front">
+        <div class="total">TOTAL: $199</div>
+        <div class="logo">💳</div>
+
+        <div class="field card-number">
+          <label for="cardNumber">CARD NUMBER</label>
+          <input type="text" id="cardNumber" required maxlength="16" pattern="\d{16}" placeholder="1234 5678 9101 1020">
+        </div>
+
+        <div class="field card-name">
+          <label for="cardName">CARD HOLDER</label>
+          <input type="text" id="cardName" placeholder="John Doe">
+        </div>
+
+        <div class="field expiration">
+          <label id="expirationDate">EXPIRATION</label>
+          <input type="text" id="month" placeholder="MM" aria-labelledby="expirationDate">
+          <input type="text" id="year" placeholder="YY" aria-labelledby="expirationDate">
+        </div>
+      </div>
+
+      <!-- CARD BACK -->
+      <div class="card-back">
+        <div class="magnetic-strip"></div>
+
+        <div class="field cvc">
+          <label for="cvc">CVC/CVV</label>
+          <input type="text" id="cvc" placeholder="XXX">
+        </div>
+      </div>
+    </div>
+
+    <button type="submit">Submit</button>
+
+  </form>
+</main>
+
+</body>
+</html>
