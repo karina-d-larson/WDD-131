@@ -280,4 +280,97 @@ const recipes = [
 		rating: 4
 	}
 ]            
-                    
+
+const recipeContainer = document.querySelector("#recipes");
+const searchInput = document.querySelector("#search");
+const searchButton = document.querySelector(".search button");
+
+
+function createStars(rating) {
+    const full = Math.floor(rating);
+    const empty = 5 - full;
+
+    let stars = "";
+
+    for (let i = 0; i < full; i++) {
+        stars += "⭐";
+    }
+
+    for (let i = 0; i < empty; i++) {
+        stars += "☆";
+    }
+
+    return stars;
+}
+
+
+function renderRecipes(list) {
+
+    recipeContainer.innerHTML = "";
+
+    list.forEach(recipe => {
+
+        const article = document.createElement("article");
+        article.classList.add("recipe");
+
+        article.innerHTML = `
+            <img src="${recipe.image}" alt="${recipe.name}">
+
+            <div class="recipe-info">
+
+                <span class="tag">${recipe.tags[0]}</span>
+
+                <h2>${recipe.name}</h2>
+
+                <span class="rating">${createStars(recipe.rating)}</span>
+
+                <p class="description">${recipe.description}</p>
+
+            </div>
+        `;
+
+        recipeContainer.appendChild(article);
+
+    });
+
+}
+
+
+function showRandomRecipe() {
+
+    const randomIndex = Math.floor(Math.random() * recipes.length);
+
+    renderRecipes([recipes[randomIndex]]);
+
+}
+
+
+function searchRecipes() {
+
+    const searchText = searchInput.value.toLowerCase();
+
+    const filtered = recipes.filter(recipe => {
+
+        return (
+            recipe.name.toLowerCase().includes(searchText) ||
+            recipe.description.toLowerCase().includes(searchText) ||
+            recipe.tags.join(" ").toLowerCase().includes(searchText)
+        );
+
+    });
+
+    filtered.sort((a, b) => a.name.localeCompare(b.name));
+
+    renderRecipes(filtered);
+
+}
+
+searchButton.addEventListener("click", searchRecipes);
+
+searchInput.addEventListener("keypress", function(e){
+    if(e.key === "Enter"){
+        searchRecipes();
+    }
+});
+
+showRandomRecipe();
