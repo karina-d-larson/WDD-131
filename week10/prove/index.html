@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recipe Book</title>
+
+    <!-- Style imports -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:description" content="Simple delicious recipes">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="https://placehold.co/1200x630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recipe Book">
+    <meta name="twitter:description" content="Simple delicious recipes">
+    <meta name="twitter:image" content="https://placehold.co/1200x630">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="https://placehold.co/180x180">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <img src="./Images/recipe-book.png" alt="recipe book logo">
+        <h1>RecipeBook</h1>
+
+    </header>
+
+
+    <section class="search">
+        <input id="search" type="search" placeholder="Find a recipe" aria-label="Search recipes">
+        <button aria-label="Search">
+        <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="">
+        </button>
+
+    </section>
+
+
+    <main>
+
+        <article class="recipe">
+
+            <!-- Filler photos are used because I didn't have the photo and didn't want to pay for an apple crisp -->
+            <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24" alt="Apple Crisp">
+
+            <div class="recipe-info">
+
+                <span class="tag">dessert</span>
+
+                <h2>Apple Crisp</h2>
+
+                <span
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars"
+                >
+                <span aria-hidden="true">⭐</span>
+                <span aria-hidden="true">⭐</span>
+                <span aria-hidden="true">⭐</span>
+                <span aria-hidden="true">⭐</span>
+                <span aria-hidden="true">☆</span>
+                </span>
+
+                <p class="description">
+                    This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
+                </p>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+        
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram icon"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="youtube icon"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="pinterest icon"></a>
+        </div>
+
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+
+    </footer>
+
+</body>
+</html>

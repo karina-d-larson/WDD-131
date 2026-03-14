@@ -35,6 +35,7 @@ article{
 
 .book_main{
     text-align: left;
+    max-width: 600px;
 }
 
 h2{
