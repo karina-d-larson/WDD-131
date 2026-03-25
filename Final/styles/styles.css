@@ -1,0 +1,395 @@
+/* ===== VARIABLES ===== */
+:root {
+  /* colors */
+  --primary-color: #2F5D50;   /* forest green */
+  --secondary-color: #7A9E7E; /* moss green */
+  --accent1-color: #C2A878;   /* muted gold */
+  --accent2-color: #6B4F3A;   /* warm brown */
+  --background: #F4EDE4;      /* cream */
+
+  /* translucent versions */
+  --primary-color-light: rgba(47, 93, 80, 0.5);
+  --secondary-color-light: rgba(122, 158, 126, 0.5);
+  --accent1-color-light: rgba(194, 168, 120, 0.2);
+  --accent2-color-light: rgba(107, 79, 58, 0.2);
+  --background-light: rgba(244, 237, 228, 0.2);
+
+  /* fonts */
+  --heading-font: "Great Vibes";
+  --paragraph-font: Lato, Helvetica, sans-serif;
+}
+
+/* ===== RESETS ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--paragraph-font);
+  background-color: var(--background);
+}
+
+/* ==================== ALL PAGES ==================== */
+
+/* ===== GENERAL STYLES ===== */
+
+
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+  font-size: 2.5rem;
+}
+
+p{
+  font-family: var(--paragraph-font);
+  color: var(--accent2-color);
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* logo + title container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* logo image */
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+/* site title */
+header h1 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+  font-size: 2rem;
+  text-align: center;
+  padding-right: 2rem;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding: 1rem 5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent1-color);
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--background);
+}
+
+/* ===== BUTTONS ===== */
+button {
+  background-color: var(--secondary-color);
+  color: var(--background);
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 0 1rem;
+  transition: 0.3s;
+  justify-self: center;
+}
+
+button:hover {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+}
+
+/* ===== CARDS ===== */
+.card {
+  background-color: var(--accent2-color);
+  border: 1px solid var(--accent2-color);
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 300px;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.card p{
+  color: var(--background);
+
+}
+
+/* ===== FOOTER ===== */
+main{
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  margin-top: 2rem;
+}
+
+footer p{
+  color: var(--accent1-color);
+}
+
+/* ==================== HOME PAGE ==================== */
+
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 3rem 1rem;
+  overflow: hidden;
+  
+}
+
+.hero h2,
+.hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2{
+  padding-top: 3rem;
+}
+
+.hero p {
+  margin-top: 1rem;
+}
+
+.overlay{
+  width: 200%;
+  height: 200%;
+  position: absolute;
+}
+
+.overlay1 {
+  left: -50px;
+  transform: translateY(-95%) rotate(10deg);
+  z-index: -1;
+  background: var(--secondary-color-light);
+  
+}
+
+.overlay2 {
+  right: -40px;
+  transform: translateY(-98%) rotate(-10deg);
+  z-index: -2;
+  background: var(--primary-color-light);
+
+}
+
+.overlay hr {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  height: 4px;
+  width: 80%;
+  z-index: 2;
+}
+.overlay1 hr {
+  background-color: var(--accent1-color);
+  margin-left: -50px;
+}
+.overlay2 hr {
+  background-color: var(--accent2-color);
+}
+
+/* ===== TODAY'S SPECIAL SECTION  ===== */
+.special{
+  text-align: center;
+}
+
+
+/* ==================== MENU PAGE ==================== */
+
+.menu-header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.menu-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#search-input {
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--accent2-color);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+
+/* ==================== ABOUT PAGE ==================== */
+
+.about {
+  position: relative;
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info img {
+  padding: 1rem;
+  border-radius: 40px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.info p {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 1rem 0;
+}
+
+
+
+/* ==================== RESPONSIVE ==================== */
+
+
+@media (min-width: 700px) {
+  /* ===== ALL RESPONSIVE ===== */
+  h2 {
+    font-size: 3rem;
+  }
+  
+  nav {
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+
+  header{
+    justify-content: space-between;
+  }
+  
+  /* ===== HOME RESPONSIVE ===== */
+  .overlay1 {
+    left: -50px;
+    transform: translateY(-85%) rotate(10deg);
+  z-index: -1;
+  }
+  
+  .overlay2 {
+    right: -40px;
+    transform: translateY(-90%) rotate(-10deg);
+    z-index: -2;
+  }
+
+  /* ===== MENU RESPONSIVE ===== */
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* ===== ABOUT RESPONSIVE ===== */
+  .info {
+    flex-direction: row;
+  }
+
+  .info img{
+    max-width: 400px;
+  }
+  
+}
+
+@media (min-width: 900px) {
+  h2 {
+    font-size: 4rem;
+  }
+  
+  /* ===== MENU RESPONSIVE ===== */
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* ===== ABOUT RESPONSIVE ===== */
+  .info img{
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  
+
+  /* ===== HOME RESPONSIVE ===== */
+  .overlay1 {
+    left: -50px;
+  transform: translateY(-75%) rotate(10deg);
+  z-index: -1;
+  }
+  
+  .overlay2 {
+    right: -40px;
+    transform: translateY(-80%) rotate(-10deg);
+    z-index: -2;
+  }
+
+}
