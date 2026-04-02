@@ -98,7 +98,7 @@ nav {
   justify-content: center;
   gap: 2rem;
   margin-top: 1rem;
-  padding: 1rem 5rem;
+  padding: 1rem;
 }
 
 nav a {
@@ -324,6 +324,7 @@ footer p{
   nav {
     justify-content: flex-end;
     padding-right: 2rem;
+    padding: 1rem 2rem;
   }
 
   header{
@@ -362,6 +363,10 @@ footer p{
 @media (min-width: 900px) {
   h2 {
     font-size: 4rem;
+  }
+
+  nav{
+      padding: 1rem 5rem;
   }
   
   /* ===== MENU RESPONSIVE ===== */
