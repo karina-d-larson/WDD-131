@@ -1,18 +1,19 @@
 /* ===== VARIABLES ===== */
 :root {
-  /* colors */
-  --primary-color: #2F5D50;   /* forest green */
-  --secondary-color: #7A9E7E; /* moss green */
-  --accent1-color: #C2A878;   /* muted gold */
-  --accent2-color: #6B4F3A;   /* warm brown */
-  --background: #F4EDE4;      /* cream */
+  /* colors (adjusted for accessibility) */
+  --primary-color: #1f453b;   /* darker forest green */
+  --secondary-color: #5f8a68; /* deeper moss green */
+  --accent1-color: #d4b06a;   /* slightly brighter gold */
+  --accent2-color: #4a3425;   /* darker brown */
+  --background: #f8f3ec;      /* lighter cream */
 
   /* translucent versions */
-  --primary-color-light: rgba(47, 93, 80, 0.5);
-  --secondary-color-light: rgba(122, 158, 126, 0.5);
-  --accent1-color-light: rgba(194, 168, 120, 0.2);
-  --accent2-color-light: rgba(107, 79, 58, 0.2);
-  --background-light: rgba(244, 237, 228, 0.2);
+  --primary-color-light: rgba(31, 69, 59, 0.5);
+  --secondary-color-light: rgba(95, 138, 104, 0.5);
+  --accent1-color-light: rgba(212, 176, 106, 0.25);
+  --accent2-color-light: rgba(74, 52, 37, 0.25);
+  --background-light: rgba(248, 243, 236, 0.3);
+
 
   /* fonts */
   --heading-font: "Great Vibes";

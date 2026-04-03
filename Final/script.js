@@ -29,49 +29,49 @@ const bakeryItems = [
   category: "dessert",
   description: "Delicate macarons dusted with shimmering stardust.",
   img: "imgs/macarons.png"
-},
-{
-  name: "Cinnamon Ember Rolls",
-  category: "dessert",
-  description: "Soft rolls with a warm cinnamon glow, fresh from the oven.",
-  img: "imgs/cinnamon-rolls.png"
-},
-{
-  name: "Lavender Dream Cake",
-  category: "dessert",
-  description: "A light, floral cake infused with calming lavender essence.",
-  img: "imgs/lavender-cake.png"
-},
-{
-  name: "Enchanted Mushroom Loaf",
-  category: "bread",
-  description: "Savory bread baked with forest mushrooms and herbs.",
-  img: "imgs/mushroom-bread.png"
-},
-{
-  name: "Willow Herb Focaccia",
-  category: "bread",
-  description: "Fluffy focaccia topped with fragrant woodland herbs.",
-  img: "imgs/focaccia.png"
-},
-{
-  name: "Golden Apple Cider",
-  category: "drink",
-  description: "Warm cider brewed from enchanted golden apples.",
-  img: "imgs/cider.png"
-},
-{
-  name: "Frosted Berry Elixir",
-  category: "drink",
-  description: "A chilled drink sparkling with sweet forest berries.",
-  img: "imgs/berry-drink.png"
-},
-{
-  name: "Sunrise Croissant",
-  category: "bread",
-  description: "Flaky croissant baked to a golden sunrise hue.",
-  img: "imgs/croissant.png"
-}
+  },
+  {
+    name: "Cinnamon Ember Rolls",
+    category: "dessert",
+    description: "Soft rolls with a warm cinnamon glow, fresh from the oven.",
+    img: "imgs/cinnamon-rolls.png"
+  },
+  {
+    name: "Lavender Dream Cake",
+    category: "dessert",
+    description: "A light, floral cake infused with calming lavender essence.",
+    img: "imgs/lavender-cake.png"
+  },
+  {
+    name: "Enchanted Mushroom Loaf",
+    category: "bread",
+    description: "Savory bread baked with forest mushrooms and herbs.",
+    img: "imgs/mushroom-bread.png"
+  },
+  {
+    name: "Willow Herb Focaccia",
+    category: "bread",
+    description: "Fluffy focaccia topped with fragrant woodland herbs.",
+    img: "imgs/focaccia.png"
+  },
+  {
+    name: "Golden Apple Cider",
+    category: "drink",
+    description: "Warm cider brewed from enchanted golden apples.",
+    img: "imgs/cider.png"
+  },
+  {
+    name: "Frosted Berry Elixir",
+    category: "drink",
+    description: "A chilled drink sparkling with sweet forest berries.",
+    img: "imgs/berry-drink.png"
+  },
+  {
+    name: "Sunrise Croissant",
+    category: "bread",
+    description: "Flaky croissant baked to a golden sunrise hue.",
+    img: "imgs/croissant.png"
+  }
 ];
 
 // ========================= HOME PAGE SCRIPTS =========================
